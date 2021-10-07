@@ -13,5 +13,4 @@ How we currently look:
 ![musicplayer](https://user-images.githubusercontent.com/79673207/136455522-37128b71-03f8-41c8-a1ef-1742f110c65b.gif)
 
 Media source:
-The 12 sample albums were procured from https://cctrax.com/. 
-Thanks to them for providing free and legal music downloads from a curated list of contemporary Creative Commons music.
+Thanks to https://cctrax.com/ for providing the albums sampled here, sourced from their curated collection of free and legal music from the Creative Commons.
