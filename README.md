@@ -10,8 +10,7 @@ Who we are:
 ![about_us](https://user-images.githubusercontent.com/79673207/136448410-e6728a51-f6aa-4ba2-ad4e-cd137f1418b3.png)
 
 How we currently look:
-![musicplayer](https://user-images.githubusercontent.com/79673207/136448805-2afa0b26-e3f4-442f-9c0b-b0ed893e0c90.png)
-
+![musicplayer](https://user-images.githubusercontent.com/79673207/136455522-37128b71-03f8-41c8-a1ef-1742f110c65b.gif)
 
 Media source:
 The 12 sample albums were procured from https://cctrax.com/. 
