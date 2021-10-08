@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="card">
+        <img src="{% static 'img/Peleus_and_Telamon_Argonauts_Guided_by_Thetis.jpg' %}" alt="Peleus" class="imaginarium" />
+        <h1>About Us</h1>
+        <p>{{ description|linebreaksbr }}</p>
+        <img src="{% static 'img/Orpheus_Taming_Beasts.jpg' %}" alt="Orpheus" class="imaginarium" />
+    </div>
+
+{%  endblock %}
