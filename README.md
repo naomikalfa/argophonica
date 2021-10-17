@@ -15,9 +15,9 @@ How we currently look:
 Places to visit:
 1. /about_us: argophonica's etymology
 2. /argophonica: main project directory with settings
-3. /datasource: all the import scripts and DJango management commands to get the media in to the database
+3. /datasource: all the media import scripts and Django management commands to get the media into the database
 4. /homepage: a landing page linking to the the music player, special visit from Nigel
-5. /musicplayer: all the media loaded into the music player
+5. /musicplayer: all the media loaded into the music player ready to play
 
 Media source:
 Thanks to https://cctrax.com/ for providing the albums sampled here, sourced from their curated collection of free and legal music from the Creative Commons.
