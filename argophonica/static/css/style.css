@@ -1,0 +1,213 @@
+*:focus{
+    outline: none;
+}
+/* *{ border: 1px solid red; }*/
+html {
+    background: #547dc4;
+    min-height: 100%;
+    overflow-y: hidden;
+}
+body {
+    margin: 0;
+    font-family: raleway, sans-serif;
+    min-height: 100%;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 4%;
+    top: 10%;
+    font-size: 30px;
+    font-weight: 650;
+    color: #7be4e7;
+    line-height: 40px;
+    text-shadow: 3px 3px 50px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 550;
+    color: #547dc4;
+    padding: 0 10%;
+    text-shadow: 3px 3px 50px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 550;
+    color: #547dc4;
+    padding: 0 10%;
+    text-shadow: 3px 3px 50px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+h4 {
+    margin: 0;
+    margin-left: -28px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #7be4e7;
+    padding-left: 15%;
+    padding-right: 11%;
+    top: 90%;
+    line-height: 30px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+h5 {
+    margin: 0;
+    margin-left: -28px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #7be4e7;
+    padding: 0 20%;
+    top: -400px;
+    line-height: 30px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+h6 {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 590;
+    color: #547dc4;
+    padding: 0 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height-top: 40px;
+    line-height-bottom: 40px;
+    text-shadow: 3px 3px 50px black, 0 0 1em blue, 0 0 0.2em blue;
+    box-shadow: 3px 3px 50px black, 0 0 1em blue, 0 0 0.2em cyan;
+    border-radius: 10px 10px 10px 10px;
+    background: transparent linear-gradient(to bottom, rgba(10,11,31,0.2) 100%, rgb(10,11,31) 70%) repeat scroll 0 0;
+}
+
+p {
+  color: #d8dbe4;
+  margin: 0;
+}
+
+.logo {
+  width:50px;
+}
+
+.card {
+  background: black;
+    width: 400px;
+    margin: 80px auto 0;
+    box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
+    padding: 50px;
+}
+
+@media(max-width:600px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.homepage {
+  text-align: center;
+}
+.container {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    background-image: url('/static/img/primordial_hole_darkmatter.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+.music-player {
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 1590px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 16px 16px 16px 16px;
+    background: transparent linear-gradient(to bottom, rgba(10,11,31,0.6) 100%, rgb(10,11,31) 70%) repeat scroll 0 0;
+    box-shadow: 1px 10px 20px 5px #222;
+}
+.album_list {
+    float: right;
+    width: 100%;
+    margin-top: 10%;
+}
+.cover {
+    float: left;
+    width: 100%;
+    height: 55%;
+}
+.cover img {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    box-shadow: -10px -5px 30px 10px #333;
+}
+.cover_two {
+    margin-top: -550px;
+    float: left;
+    width: 100%;
+    height: 55%;
+}
+.cover_three {
+    margin-top: -100px;
+    float: center;
+    width: 90%;
+    height: 30%;
+}
+.cover_four {
+    margin: 0;
+    padding-top: -80px;
+    float: center;
+    width: 90%;
+    height: 30%;
+}
+.title {
+    float: left;
+    width: 90%;
+    margin-top: -90%;
+}
+.back_forth_arrows {
+    float: left;
+    margin: 0;
+    width: 85%;
+    margin-top: -82%;
+    padding: 10%;
+}
+.fa-step-forward {
+    font-size: 32px;
+    background:-moz-linear-gradient(top, #00ffff 0%, #000066 100%);
+    background: -webkit-linear-gradient(top, #00ffff 0%, #000066 100%);
+    background: linear-gradient(to bottom, #00ffff 0%, #000066 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.fa-step-backward {
+    font-size: 32px;
+    background:-moz-linear-gradient(top, #00ffff 0%, #000066 100%);
+    background: -webkit-linear-gradient(top, #00ffff 0%, #000066 100%);
+    background: linear-gradient(to bottom, #00ffff 0%, #000066 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.track_list {
+    float: left;
+    margin: 0;
+    width: 85%;
+    margin-top: -64%;
+    padding: 8%;
+}
+.width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    float: left;
+}
