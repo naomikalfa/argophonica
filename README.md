@@ -7,10 +7,17 @@ questionable piles of rubble every which way. And shall we agree to say nothing 
 So many to-dos! They are being stored in 'issues', feel free to take a look.
 
 Who we are:
-![about_us](https://user-images.githubusercontent.com/79673207/136448410-e6728a51-f6aa-4ba2-ad4e-cd137f1418b3.png)
+![argophonica_aboutus](https://user-images.githubusercontent.com/79673207/137606076-d7f78c89-6ffb-4d3c-b62b-f85ac2114d68.png)
 
 How we currently look:
-![musicplayer](https://user-images.githubusercontent.com/79673207/136455522-37128b71-03f8-41c8-a1ef-1742f110c65b.gif)
+![argophonica_loop](https://user-images.githubusercontent.com/79673207/137609427-3b6fe5b9-1c00-4e0b-9c25-8dc258bdecc8.gif)
+
+Places to visit:
+1. /about_us: argophonica's etymology
+2. /argophonica: main project directory with settings
+3. /datasource: all the import scripts and DJango management commands to get the media in to the database
+4. /homepage: a landing page linking to the the music player, special visit from Nigel
+5. /musicplayer: all the media loaded into the music player
 
 Media source:
 Thanks to https://cctrax.com/ for providing the albums sampled here, sourced from their curated collection of free and legal music from the Creative Commons.
