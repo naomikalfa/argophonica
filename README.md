@@ -7,6 +7,8 @@ questionable piles of rubble every which way. And shall we agree to say nothing 
 So many to-dos! They are being stored in 'issues', feel free to take a look.
 
 Who we are:
+Argophonica is a music player built in Python within a Django framework and using a Postgres database. The database is wired to a browser front-end using JavaScript, HTML, and CSS.
+Future functionality will include things like user authentication, payment system integration, and search functionality.
 ![argophonica_aboutus](https://user-images.githubusercontent.com/79673207/137606076-d7f78c89-6ffb-4d3c-b62b-f85ac2114d68.png)
 
 How we currently look:
