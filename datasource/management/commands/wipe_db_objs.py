@@ -8,8 +8,10 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         def yes_check():
+            
             print(f"Warning! This will delete all data in the database, type YES in capitals to continue")
             answer = input()
+            
             if answer == 'YES':
                 return answer
             else:
@@ -44,13 +46,15 @@ class Command(BaseCommand):
                 print('Data from', model_type, 'cleared')
 
             elif model_type == 'ALL':
-                Track.objects.all().delete()
-                Artist.objects.all().delete()
                 Album.objects.all().delete()
+                Artist.objects.all().delete()
+                Track.objects.all().delete()
                 print('Data from', model_type, 'cleared')
 
             else:
                 print('Aborted')
+                sys.exit()
 
         else:
             print('Aborted')
+            sys.exit()
