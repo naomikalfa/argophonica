@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+  <meta charset='utf-8'/>
+  <title>Argophonica | Up to 11!</title>
+
+  <link href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'/>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css' rel='stylesheet'/>
+  <link href="{% static 'css/style.css' %}" rel='stylesheet'/>
+  </head>
+   <body>
+
+     <div class='container'>
+      <div class='music-player' align='center'>
+       <div class='cover'>
+                <br><br> <!-- fix this -->
+        <h2> | A R G O P H O N I C A |</h2>
+        <img src="{% static 'img/Nigel.jpeg' %}" alt="Nigel"/>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!-- fix this -->
+        <h4> Nigel wants to know why you've not yet turned the music up to 11!</h4>>
+       <a href="{% url 'index'  %}" aria-label='Go to next album' aria-hidden='true'>
+        <h2>appease Nigel by going here</h2></a>
+       </div>
+        </div>
+         </div>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js'></script>
+  <script src="{% static './script.js' %}"></script>
+
+   </body>
+</html>
+
