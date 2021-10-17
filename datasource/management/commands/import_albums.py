@@ -10,7 +10,7 @@ Purpose:
 + store all .mp3 files as tracks
 + store all image files as album artwork
 + store artist's discography
-+ instantiate all available Artist objects (to import Tracks, Albums must first be imported.
++ instantiate all available Artist objects (to import Tracks, Albums must first be imported)
 """
 from .import_artists import get_artist, store_artist_discography
 from datasource.models import Album, Artist
