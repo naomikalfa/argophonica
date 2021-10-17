@@ -1,12 +1,51 @@
-{% extends 'layout.html' %}
 {% load static %}
 
-{% block content %}
-    <div class="card">
-        <img src="{% static 'img/Peleus_and_Telamon_Argonauts_Guided_by_Thetis.jpg' %}" alt="Peleus" class="imaginarium" />
-        <h1>About Us</h1>
-        <p>{{ description|linebreaksbr }}</p>
-        <img src="{% static 'img/Orpheus_Taming_Beasts.jpg' %}" alt="Orpheus" class="imaginarium" />
-    </div>
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+  <meta charset='utf-8'/>
+  <title>Argophonica | About Us</title>
 
-{%  endblock %}
+  <link href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'/>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css' rel='stylesheet'/>
+  <link href="{% static 'css/style.css' %}" rel='stylesheet'/>
+  </head>
+   <body>
+
+     <div class='container'>
+      <div class='music-player' align='center'>
+       <div class='cover'>
+       <h1>ABOUT US</h1>
+        <img src="{% static 'img/Peleus_and_Telamon_Argonauts_Guided_by_Thetis.jpg' %}" alt='Peleus' />
+          </div>
+        <div class='cover_two'>
+       <h6> We are Argophonica<br> A site to sate your cochleae!<br>
+            Whence comes our name?<br> Read on, fair listener.<br><br>
+            In "Metamporphoses" Book 11, Ovid writes of Orpheus: <br>
+            "With his songs, Orpheus, the bard of Thrace, allured the trees, the savage animals,
+            and even the insensate rocks, to follow him."<br></h6>
+            <h5>+<br></h5>
+            <h6>Before the Latin writings came the Greek writings.<br>
+            One of its epics, "Argonautica Orphica", is narrated by the voice of Orpheus. It is
+            herein claimed that the Argo was the first ship ever built.<br> It had many splendorous
+            & terrifying adventures, one of which was its encounter with the overwhelming sounds
+            of the Sirens, as the Argonauts carried out their quest to bring the Golden Fleece to
+            Iolcus.</h6>
+            <h5>+<br></h5>
+            <h6>The adjective "phonic", denoting that which pertains to sound, comes to us through the
+            Greek phōnē which denotes sound or voice.</h6>
+            <h5>=<br></h5>
+            <h6>A R G O P H O N I C A !<br><br>
+            <a href="{% url 'index'  %}" aria-label='Go to next album' aria-hidden='true'>
+            <h6>May the music be as a voyage to you, a quest, an epic to traverse!<br></h6></a>
+       </h6></div>
+
+        <img src="{% static 'img/Orpheus_Taming_Beasts.jpg' %}" alt="Orpheus" class='cover_three'>
+    </div>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js'></script>
+  <script src="{% static './script.js' %}"></script>
+
+   </body>
+</html>
+
