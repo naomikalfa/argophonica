@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+  <meta charset='utf-8'/>
+  <title>Argophonica | Play Some Tunes !</title>
+  <link href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'/>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css' rel='stylesheet'/>
+  <link href="{% static './style.css' %}" rel='stylesheet'/>
+ </head>
+ <body>
+
+     <div class='container'>
+      <div class='music-player'>
+
+          <div class='cover'>
+        <img src='{{ object.artwork_file.url }}' alt='{{ object.artwork_link }}' />
+       </div>
+
+       <div class='title'>
+        <h2> {{ object.artist }} </h2>
+        <h3> {{ object.title }} </h3>
+       </div>
+
+       <div class='back_forth_arrows'>
+
+          {% if prev_album %}
+              <a href='{% url "album_detail" slug=prev_album.slug %}' aria-label='Go to previous album'>
+                  <i class='fa fa-step-backward fa-2x' aria-hidden='true'></i></a>
+          {% endif %}
+          <span> &nbsp;&nbsp;&nbsp; </span>
+          {% if next_album %}
+              <a href='{% url "album_detail" slug=next_album.slug %}' aria-label='Go to next album'>
+                  <i class='fa fa-step-forward fa-2x' aria-hidden='true'></i></a>
+          {% endif %}
+       </div>
+
+       <div class='track_list'>
+       {% for t in track %}
+           <h4> {{ t.track_number }}.</h4>
+           <h1>  {{ t.title }} </h1>
+
+            <audio class='fc-media' style='width: 100%;'>
+            <source src='{% if t.audio_file %} {{ t.audio_file.url }} {% else %} {{ t.audio_link }} {% endif %}'
+                    type='audio/mp3'/></audio>
+       {% endfor %}
+       </div>
+
+      </div>
+     </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js'></script>
+  <script src="{% static './script.js' %}"></script>
+
+ </body>
+</html>

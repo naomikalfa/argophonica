@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+  <meta charset='utf-8'/>
+  <title>Argophonica | Play Some Tunes !</title>
+
+  <link href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'/>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css' rel='stylesheet'/>
+  <link href="{% static './style.css' %}" rel='stylesheet'/>
+  </head>
+   <body>
+
+     <div class='container'>
+      <div class='music-player' align='center'>
+       <h6> {{ description|linebreaksbr }}</h6>
+        <div class='album_list'>
+            {% for key, value in display_index_albums.items %}
+                <h2> | {{ key }} | </h2>
+
+               {% for artist_dicts in value.items %}
+                <a href="{% url 'index_slug' slug=artist_dicts.1.slug %}" aria-label='Go to next album' aria-hidden='true'>
+                    <h5> {{ artist_dicts.1.title }} </h5></a>
+               {% endfor %}
+
+            {% endfor %}
+        </div>
+       </div>
+      </div>
+
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js'></script>
+  <script src="{% static './script.js' %}"></script>
+
+ </body>
+</html>
