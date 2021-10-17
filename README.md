@@ -15,7 +15,7 @@ How we currently look:
 Places to visit:
 1. /about_us: argophonica's etymology
 2. /argophonica: main project directory with settings
-3. /datasource: all the media import scripts and Django management commands to get the media into the database
+3. /datasource: all the media import scripts and Django management commands to get the media into and out of the database
 4. /homepage: a landing page linking to the the music player, special visit from Nigel
 5. /musicplayer: all the media loaded into the music player ready to play
 
